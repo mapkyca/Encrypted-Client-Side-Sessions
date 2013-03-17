@@ -45,6 +45,7 @@ Limitations
  * Cookies can only contain a small amount of data, so you are limited in the amount of data you can send. A sensible maximum is 4000 bytes.
  * You must be done with sessions, i.e. call session_write_close() before you write any non-header output. This is less of a problem if you're using output buffering (like Elgg's template system.
  * Since sessions are stored client side, its obvious that you should keep your encryption key secure. Changing the key will destroy all current sessions (this may actually be a useful feature).
+ * Although I've not played with it yet, setting the HTTPOnly flag to true will probably cause problems if you use any AJAX.
  
 See
 ---
