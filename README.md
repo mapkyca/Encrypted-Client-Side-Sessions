@@ -3,6 +3,8 @@ Encrypted-Client-Side-Sessions
 
 This is an example for storing PHP session data securely on the client browser in a cookie.
 
+To be clear: This is a proof of concept, there are many improvements to how you deploy the encryption if you want to use this in a production system (authentication, PFS, etc etc etc).
+
 Why do this?
 ------------
 
